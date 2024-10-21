@@ -1,0 +1,129 @@
+/* .treatments {
+  padding: 0px 150px 80px 120px !important;
+} */
+.treatmentFive {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 150px 10px 0px 10px;
+  background-image: url("../../assets/treatments/abhyanga.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+.treatmentSix {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 150px 10px 0px 10px;
+  background-image: url("../../assets/treatments/abhyanga.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+.treatmentSeven {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 150px 10px 0px 10px;
+  background-image: url("../../assets/treatments/abhyanga.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+.treatmentEight {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 150px 10px 0px 10px;
+  background-image: url("../../assets/treatments/abhyanga.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .treatmentOne,
+  .treatmentTwo,
+  .treatmentThree,
+  .treatmentFour,
+  .treatmentFive,
+  .treatmentSix,
+  .treatmentSeven,
+  .treatmentEight {
+    background-attachment: scroll;
+  }
+}
+
+.treatmentOne::before,
+.treatmentTwo::before,
+.treatmentThree::before,
+.treatmentFour::before,
+.treatmentFive::before,
+.treatmentSix::before,
+.treatmentSeven::before,
+.treatmentEight::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.treatmentOne > *,
+.treatmentTwo > *,
+.treatmentThree > *,
+.treatmentFour > *,
+.treatmentFive > *,
+.treatmentSix > *,
+.treatmentSeven > *,
+.treatmentEight > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .treatments {
+    padding: 10px;
+  }
+  .treatments p {
+    margin-block-start: 20px;
+    text-align: justify;
+  }
+  .treatmentOne,
+  .treatmentTwo,
+  .treatmentThree,
+  .treatmentFour {
+    min-block-size: 70vh;
+  }
+}

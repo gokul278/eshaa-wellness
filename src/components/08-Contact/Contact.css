@@ -1,0 +1,148 @@
+.contactUs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 10px;
+  background-image: url("../../assets/contact/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 60vh;
+  inline-size: 100%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .contactUs {
+    background-attachment: scroll;
+  }
+}
+
+.contactUs::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.contactUs > * {
+  position: relative;
+  z-index: 2;
+}
+
+.contactUsHeader {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactUsHeader h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.breadCrumb {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.breadCrumb p {
+  font-size: 22px;
+}
+
+.breadCrumb span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.contactUsGrids .gridItems img {
+  block-size: 80px !important;
+  inline-size: 130px !important;
+  object-fit: contain !important;
+}
+
+.contactGetIn h4 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.contactGetIn h3 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  color: #00481a;
+}
+
+.contactGetIn {
+  padding: 70px 40px 20px 40px;
+}
+
+.contactGetIn p {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.contactContents {
+  padding: 0px 0px 100px 0px;
+}
+
+.emailContactForm {
+  display: flex;
+}
+
+.messageBtn {
+  background: #587855;
+  color: white;
+  font-size: 20px;
+  padding: 7px 25px;
+  border-radius: 6px;
+}
+
+.sendBtn {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .emailContactForm {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 30px;
+  }
+}
+
+.enquiryTxt h2 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.enquiryTxt p {
+  text-align: center;
+  font-size: 20px;
+  margin-block-start: 10px;
+}
+
+.divider {
+  border-block-end: 1px solid #587855;
+  margin: 3rem 0;
+}

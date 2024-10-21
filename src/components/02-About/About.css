@@ -1,0 +1,16 @@
+.glidesCont h2 {
+  font-size: 35px;
+  padding: 30px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.visImg img {
+  block-size: 200px;
+}
+.visImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

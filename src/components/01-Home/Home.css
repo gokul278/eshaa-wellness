@@ -1,0 +1,362 @@
+.homePageContents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 10px;
+  background-image: url("../../assets/home/bgImgOne.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .homePageContents {
+    background-attachment: scroll;
+  }
+}
+
+.homePageContents::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.homePageContents > * {
+  position: relative;
+  z-index: 2;
+}
+
+.homePageWelcomeCont {
+  text-align: center;
+  /* f0ede3 */
+  background-color: #fff;
+  padding: 80px 20px 50px 20px;
+  border-radius: 10px;
+}
+.homePageWelcomeCont h5 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.homePageWelcomeCont p {
+  font-size: 24px;
+}
+
+.homePageWelcomeCont button {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 19px;
+  background: #698f65;
+  margin-block-start: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+
+.treatments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImg {
+  block-size: 200px;
+  inline-size: 200px;
+}
+/* 
+.homePageWelcomeCont {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+} */
+
+.homeContOne,
+.homeContTwo {
+  margin: 0;
+  padding: 30;
+}
+
+.homeWelcomeContents {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-block-start: 80px;
+}
+
+.welcomeEshaa h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.welcomeEshaa p {
+  font-size: 21px;
+  padding-block-start: 20px;
+  text-align: justify;
+}
+
+.aboutEshaa h3 {
+  font-size: 30px;
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+.aboutEshaa p {
+  font-size: 21px;
+  margin: 12px 0px;
+  text-align: justify;
+}
+
+.homeContTwoImg {
+  block-size: 300px;
+  object-fit: cover;
+  inline-size: 100%;
+}
+
+.homeContOneImg {
+  block-size: 650px;
+  object-fit: cover;
+  inline-size: 100%;
+}
+
+.treatmentOne {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 150px 10px 0px 10px;
+  background-image: url("../../assets/treatments/abhyanga.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  margin-block-start: 30px;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+.treatmentTwo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 150px 10px 0px 10px;
+  background-image: url("../../assets/treatments/prist.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+.treatmentThree {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 150px 10px 0px 10px;
+  background-image: url("../../assets/treatments/padha.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+.treatmentFour {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 150px 10px 0px 10px;
+  background-image: url("../../assets/treatments/pinda.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-block-size: 100vh;
+  inline-size: 100%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .treatmentOne,
+  .treatmentTwo,
+  .treatmentThree,
+  .treatmentFour,
+  .treatmentFive,
+  .treatmentSix,
+  .treatmentSeven,
+  .treatmentEight {
+    background-attachment: scroll;
+  }
+}
+
+.treatmentOne::before,
+.treatmentTwo::before,
+.treatmentThree::before,
+.treatmentFour::before,
+.treatmentFive::before,
+.treatmentSix::before,
+.treatmentSeven::before,
+.treatmentEight::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.treatmentOne > *,
+.treatmentTwo > *,
+.treatmentThree > *,
+.treatmentFour > *,
+.treatmentFive > *,
+.treatmentSix > *,
+.treatmentSeven > *,
+.treatmentEight > * {
+  position: relative;
+  z-index: 2;
+}
+
+.ourTreatments h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.ourTreatments p {
+  text-align: center;
+  font-size: 23px;
+}
+
+.ourTreatments {
+  padding: 50px 0px 0px 0px;
+}
+
+.treatments h3 {
+  /* font-size: 50px; */
+  color: white;
+  text-transform: uppercase;
+  border-block-end: 2px solid #ffffff;
+}
+
+.treatments p {
+  color: white;
+  font-size: 23px;
+  display: flex;
+  text-align: start;
+}
+
+/* .treatments {
+  padding: 0px 150px 80px 120px;
+} */
+
+@media only screen and (max-width: 600px) {
+  .treatments {
+    padding: 10px !important;
+  }
+  .treatments p {
+    margin-block-start: 20px;
+    text-align: justify;
+  }
+  .treatmentOne,
+  .treatmentTwo,
+  .treatmentThree,
+  .treatmentFour {
+    min-block-size: 70vh;
+  }
+}
+
+.treatmentPoints {
+  display: flex;
+  text-align: start !important;
+}
+
+.galleryPreview {
+  padding: 80px 0px 40px 0px;
+}
+
+.galleryPreview h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.galleryPreview h5 {
+  font-size: 22px;
+  text-align: center;
+  padding: 10px;
+}
+
+.galleryPreview p {
+  font-size: 20px;
+  padding: 20px 0px 50px 0px;
+  text-align: center;
+}
+
+.priceList h4 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.priceList h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.treatmentContents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.treatContTwo h5 {
+  font-size: 25px;
+}
+.treatContTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatContOne h3 {
+  font-size: 23px;
+}
+
+.dividers {
+  border-block-end: 1px solid #587855;
+  margin: 1.5rem 0;
+}
+
+.horizontalDivider {
+  border-block-end: 1px solid #587855;
+  width: 0%;
+}

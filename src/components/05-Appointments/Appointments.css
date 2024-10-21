@@ -1,0 +1,45 @@
+.stayTuned {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  block-size: 90vh;
+  overflow: hidden;
+}
+
+.stayTuned h2 {
+  font-size: 50px;
+}
+
+@media (max-width: 668px) {
+  .comingSoonImage {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .comingSoonImage {
+    display: block;
+  }
+}
+
+.calendarView {
+  padding: 140px 50px;
+}
+
+/* Appointments.css */
+
+/* Adjust calendar toolbar and layout for mobile screens */
+@media (max-width: 768px) {
+  .fc-header-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .fc-toolbar-chunk {
+    margin-block-end: 10px;
+  }
+
+  .fc-toolbar-title {
+    font-size: 18px;
+  }
+}
